@@ -1,0 +1,33 @@
+
+state={
+	id=446
+	name="STATE_446"
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 5
+			
+
+		}
+		victory_points = {
+			7011 20 
+		}
+		
+		
+		victory_points = {
+			13456 1
+		}
+		add_core_of = EGY
+
+	}
+
+	provinces={
+		1068 3996 4055  4143 7011 7188 10031 12004  13440 13441 13443 13444 13447 13450 13451 13456 16297 13250 7117 16296 16294 16295 
+	}
+	manpower=6546489
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=408
+	name="STATE_408"
+
+	state_category = rural
+	
+	manpower = 120000
+	
+	resources = {
+		chromium = 14
+		steel = 2
+	}
+
+	history={
+		owner = JAP
+
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+		}
+		add_core_of = JAP
+	}
+
+	provinces={
+		664 681 837 3695 3723 3739 3753 6686 6715 6833 9639 9641 11624 11626 11629 11643 11765 11777 
+	}
+}
