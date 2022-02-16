@@ -1,0 +1,27 @@
+
+state={
+	id=262
+	name="STATE_262" # Pechora
+	manpower = 39832
+	
+	state_category = rural
+	
+	resources={
+		oil=7 # was: 8
+	}
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 1
+			
+
+		}
+		add_core_of = SOV
+		add_core_of = NEN
+	}
+
+	provinces={
+		 154  3147   6177 6192  9099   9230 10207      
+	}
+}

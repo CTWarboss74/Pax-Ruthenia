@@ -1,0 +1,26 @@
+
+state={
+	id=292
+	name="STATE_292"
+	resources={
+		oil=3.000
+	}
+
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SAU
+
+	}
+
+	provinces={
+		2057 4968 5027 5099 7970 8004 8060 10892 10901 12455 12813 12870 
+	}
+	manpower=52100
+	#1440000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}
