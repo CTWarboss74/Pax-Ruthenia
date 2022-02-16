@@ -1,0 +1,33 @@
+
+state={
+	id=610
+	name="STATE_610" # Jehol
+	manpower = 800000
+	
+	state_category = rural
+	
+	resources = {
+		oil = 2
+	}
+	
+	history={
+		owner = MAN
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+	
+		
+		
+		victory_points = { 6837 1 }
+		
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+
+	}
+
+	provinces={
+		814  934 3814 3828 3881 3934 4514 6837 6852  6898     9905 9927   11855 11886 
+	}
+}
