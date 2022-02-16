@@ -1,0 +1,33 @@
+state={
+	id=943
+	name="STATE_943"
+	provinces={
+		3552 
+	
+	}
+	history={
+	victory_points = {
+			3552 20
+		}
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = BRI
+		buildings={
+		3552 = {
+				naval_base = 10
+				coastal_bunker = 1
+			}
+		infrastructure = 3
+			dockyard = 1
+			air_base = 1
+		
+		}
+	
+	
+	
+	
+	}
+	state_category= town
+	manpower=139832
+	buildings_max_level_factor=1.000
+}

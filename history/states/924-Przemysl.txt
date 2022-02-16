@@ -1,0 +1,24 @@
+state={
+	id=924
+	name="STATE_924"
+	state_category = city
+	
+	history={
+		owner = POL
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			
+		}
+		add_core_of = POL
+		victory_points = {
+			20022  5
+		}
+	}
+	provinces={
+		20021 20022 
+	}
+	manpower=61236
+	buildings_max_level_factor=1.000
+}

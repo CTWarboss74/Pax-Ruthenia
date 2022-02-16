@@ -1,0 +1,30 @@
+state={
+	id=927
+	name="STATE_927"
+	provinces={
+		3485 
+	}
+	state_category = town
+	history={
+	owner = GER
+	add_core_of = GER
+	add_core_of = SIL
+	
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			
+
+		}
+
+	
+	
+	victory_points = {
+			3485 3 
+		}
+	
+	}
+	manpower=123130
+	buildings_max_level_factor=1.000
+}

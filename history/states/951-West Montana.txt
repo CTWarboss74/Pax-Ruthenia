@@ -1,0 +1,23 @@
+state={
+	id=952
+	name="STATE_952"
+	provinces={
+		1736 1854 1857 4838 6742 7779 11712 12676 
+	}
+	state_category = rural
+	resources={
+		tungsten=3 # was: 16
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = USA
+		
+
+	}
+	manpower=200124
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,32 @@
+state={
+	id=913
+	name="STATE_913"
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+			12049 = {
+				naval_base = 2
+
+			}
+
+		}
+		
+		victory_points = {
+			12049 5 
+		}
+		victory_points = {
+			4073 3 
+		}
+		
+		add_core_of = EGY
+		
+	}
+	state_category=town
+	provinces={
+		1155 4073 9947 12049 13461 16923
+	}
+	manpower=40819
+	buildings_max_level_factor=1.000
+}

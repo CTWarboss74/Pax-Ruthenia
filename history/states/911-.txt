@@ -1,0 +1,29 @@
+
+state={
+	id=911
+	name="STATE_911"
+
+	state_category = town
+	
+	manpower = 727711
+	
+	resources = {
+		aluminium = 4
+		steel = 2
+		tungsten = 1
+	}
+
+	history={
+		owner = SWI
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = { 3641 3 }
+		add_core_of = SWI
+	}
+
+	provinces={
+		658 3641 3660 3662 9600  
+	}
+}

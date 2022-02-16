@@ -1,0 +1,25 @@
+state={
+	id=948
+	name="STATE_948"
+	provinces={
+		1738 11772 12570 
+	}
+	resources={
+		oil=2 # was: 20
+	}
+	
+	state_category = town
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = USA
+		
+
+	}
+	manpower=110234
+	buildings_max_level_factor=1.000
+}

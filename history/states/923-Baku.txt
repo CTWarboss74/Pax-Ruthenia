@@ -1,0 +1,31 @@
+state={
+	id=923
+	name="STATE_923"
+	resources={
+		oil=43
+	}
+	history={
+		owner = SOV
+		victory_points = {
+			7661 20 
+		}
+		victory_points = {
+			20070 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			fuel_silo = 1
+			air_base = 1
+		}
+		add_core_of = SOV
+		add_core_of = AZR
+
+	}
+	provinces={
+		7661 20070
+	}
+	manpower=1267513
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

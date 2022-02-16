@@ -1,0 +1,27 @@
+state={
+	id=947
+	name="STATE_947"
+	provinces={
+		868 1658 1809 1827 3869 7780 10588 12627 12642 
+	}
+	resources={
+		oil=5 # was: 20
+	}
+	
+	state_category = town
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = USA
+		victory_points = {
+			1827 5 
+		}
+
+	}
+	manpower=152421
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=910
+	name="STATE_910"
+
+	state_category = town
+	
+	manpower = 682689
+	
+	resources = {
+		aluminium = 6
+		steel = 4
+	}
+
+	history={
+		owner = SWI
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = { 9587 3 }
+		add_core_of = SWI
+	}
+
+	provinces={
+		636 3612 9587 9618
+	}
+}

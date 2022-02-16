@@ -1,0 +1,30 @@
+state={
+	id=917
+	name="STATE_917"
+	history={
+	owner = ENG
+		victory_points = {
+			13311 1 
+		}
+		victory_points = {
+			11333 1 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+			anti_air_building = 3
+			air_base = 3
+			
+
+		}
+		add_core_of = ENG
+		
+		}
+	provinces={
+		11333 13311 
+	}
+	manpower=3274765
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

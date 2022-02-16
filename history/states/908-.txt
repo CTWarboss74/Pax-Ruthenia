@@ -1,0 +1,21 @@
+
+state={
+	id=908
+	name="STATE_908"
+	manpower = 941300
+	
+	state_category = town
+
+	history={
+		owner = BEL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = BEL
+	}
+
+	provinces={
+		3488 6537 9418 9444 11407 
+	}
+}

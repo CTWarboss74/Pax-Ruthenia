@@ -1,0 +1,27 @@
+state={
+	id=920
+	name="STATE_920"
+	state_category = rural
+	
+	resources={
+		oil=5 
+	}
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 1
+			12530 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = SOV
+		add_core_of = NEN
+	}
+	provinces={
+		11047 12530 
+	}
+	manpower=3289
+	buildings_max_level_factor=1.000
+}
