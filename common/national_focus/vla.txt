@@ -1,0 +1,918 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_USA_CONGRESS}
+
+focus_tree = {
+	id = vla_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 20
+			tag = VLA
+		}
+		
+		modifier = {
+			add = 20
+			original_tag = VLA
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+#	focus = {
+#		id = USA_
+#		#icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+	focus = {
+		id = VLA_edge_of_siberia
+		icon = GFX_focus_SOV_reinforce_eastern_naval_bases
+		x = 13
+		y = 0
+
+		mutually_exclusive = {}
+		prerequisite = {}
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_political_power = 10
+			add_stability = 0.02
+			country_event = {
+             id = vlapr.1
+             days = 1
+            }
+		}
+	}
+    focus = {
+		id = VLA_friends_in_tokyo
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		x = 11
+		y = 1
+
+		mutually_exclusive = { focus = VLA_friends_in_hsinking }
+		prerequisite = { focus = VLA_edge_of_siberia }
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		    add_war_support = 0.05
+			add_opinion_modifier = {
+               target = JAP
+               modifier = fascism_leanings_good  
+            }
+			JAP = { 
+			   add_opinion_modifier = {
+                  target = VLA
+                  modifier = fascism_leanings_good  
+                }
+			    send_equipment = {
+                  equipment = infantry_equipment
+                  amount = 500
+                  target = VLA
+                }
+			}
+			country_event = {
+             id = vlapr.2
+             days = 1
+            }
+			custom_effect_tooltip = VLA_japanese_up
+		}
+		hidden_effect = { VLA_jap_up = yes }
+	}
+	focus = {
+		id = VLA_friends_in_hsinking
+		icon = GFX_focus_jap_manchurian_project
+		x = 15
+		y = 1
+
+		mutually_exclusive = { focus = VLA_friends_in_tokyo }
+		prerequisite = { focus = VLA_edge_of_siberia }
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_war_support = 0.05
+			add_opinion_modifier = {
+               target = MAN
+               modifier = fascism_leanings_good  
+            }
+			MAN = { 
+			   add_opinion_modifier = {
+                  target = VLA
+                  modifier = fascism_leanings_good  
+                }
+			    send_equipment = {
+                  equipment = infantry_equipment
+                  amount = 300
+                  target = VLA
+                }
+			}
+			custom_effect_tooltip = VLA_japanese_man_down
+		}
+		hidden_effect = { VLA_jap_down = yes }
+	}
+	focus = {
+		id = VLA_manchurian_railways
+		icon = GFX_focus_SOV_south_manchuria_railway
+		x = 15
+		y = 2
+
+		mutually_exclusive = { }
+		prerequisite = { focus = VLA_friends_in_hsinking }
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			657 = {
+		        add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		    }
+			560 = {
+		        add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		    }
+			add_tech_bonus = {
+               bonus = 0.5
+               uses = 1
+               category = construction_tech
+            }
+		}
+	}
+	focus = {
+		id = VLA_japanese_companies
+		icon = GFX_focus_jap_zaibatsu
+		x = 11
+		y = 2
+
+		mutually_exclusive = { }
+		prerequisite = { focus = VLA_friends_in_tokyo }
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		
+		   657 = {
+		        add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		    }
+			add_tech_bonus = {
+               bonus = 1
+               uses = 1
+               category = industry
+            }
+		}
+	}
+	focus = {
+		id = VLA_siberian_fascism
+		icon = GFX_focus_SOV_third_rome
+		x = 13
+		y = 3
+
+		mutually_exclusive = { }
+		prerequisite = {
+		  focus = VLA_manchurian_railways
+		  focus = VLA_japanese_companies
+		}
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		  add_popularity = {
+             ideology = fascism
+             popularity = 0.05
+            }
+		}
+	}
+	focus = {
+		id = VLA_black_army
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+		x = 10
+		y = 4
+
+		mutually_exclusive = { }
+		prerequisite = {
+		  focus = VLA_siberian_fascism
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {	  	
+          army_experience = 25
+		  add_manpower = 1000
+		  add_tech_bonus = {
+               bonus = 0.5
+               uses = 1
+               category = infantry_weapons
+            }
+		}
+	}
+	focus = {
+		id = VLA_japanese_advisors
+		icon = GFX_focus_jap_spiritual_mobilization
+		x = 10
+		y = 5
+
+		mutually_exclusive = { }
+		prerequisite = {
+		  focus = VLA_black_army
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		   add_ideas = { VLA_jap_advisors }
+		   custom_effect_tooltip = VLA_japanese_up
+		}
+		hidden_effect = { VLA_jap_up = yes }
+	}
+	focus = {
+		id = VLA_plane_development
+		icon = GFX_goal_generic_air_fighter
+		x = 10
+		y = 6
+
+		mutually_exclusive = { }
+		prerequisite = {
+		  focus = VLA_japanese_advisors
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		  air_experience = 25
+		  add_manpower = 500
+		  add_tech_bonus = {
+               bonus = 0.5
+               uses = 1
+               category = light_air
+            }
+		}
+	}
+	focus = {
+		id = VLA_autarky
+		icon = GFX_goal_generic_construction
+		x = 12
+		y = 4
+
+		mutually_exclusive = { focus = VLA_japanese_imports }
+		prerequisite = {
+		  focus = VLA_siberian_fascism
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		  add_resource = {
+             type = oil
+             amount = 5
+             state = 560
+            }
+			add_resource = {
+             type = steel
+             amount = 12
+             state = 560
+            }
+			 add_tech_bonus = {
+               bonus = 1
+               uses = 1
+               category = excavation_tech
+            }
+		    custom_effect_tooltip = VLA_japanese_down
+		}
+		hidden_effect = { VLA_jap_down = yes }
+	}
+	focus = {
+		id = VLA_nikolayevsk_rebuild
+		icon = GFX_focus_spa_the_spanish_miracle
+		x = 12
+		y = 5
+
+		mutually_exclusive = { }
+		prerequisite = {
+		  focus = VLA_autarky
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		  560 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_category = urban
+				add_victory_points = {
+	             province = 12559
+	             value = 5
+                }
+		    }
+		}
+	}
+	focus = {
+		id = VLA_transsiberian
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 12
+		y = 6
+
+		mutually_exclusive = {  }
+		prerequisite = {
+		  focus = VLA_nikolayevsk_rebuild
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		  657 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		    }
+			561 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		    }
+			build_railway = {
+				level = 1
+				build_only_on_allied = no
+				controller_priority = {
+					base = 1
+   
+					modifier = {
+						tag = VLA
+						add = 3
+					}
+				}
+				fallback = yes
+				path = { }
+				start_province = 12559
+				target_province = 12543
+			}
+		}
+	}
+	focus = {
+		id = VLA_japanese_imports
+		icon = GFX_focus_jap_showa_restoration
+		x = 14
+		y = 4
+
+		mutually_exclusive = { focus = VLA_autarky }
+		prerequisite = {
+		  focus = VLA_siberian_fascism
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		  add_ideas = { VLA_vladivostok_imports }
+		  JAP = { add_ideas = { JAP_vladivostok_imports } }
+		  custom_effect_tooltip = VLA_japanese_up
+		}
+		hidden_effect = { VLA_jap_up = yes }
+	}
+	focus = {
+		id = VLA_new_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 14
+		y = 5
+
+		mutually_exclusive = {  }
+		prerequisite = {
+		  focus = VLA_siberian_fascism
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		  657 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+		    }
+			561 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+		    }
+		}
+	}
+	focus = {
+		id = VLA_busan_to_nikolayevsk
+		icon = GFX_goal_generic_army_motorized
+		x = 14
+		y = 6
+
+		mutually_exclusive = {  }
+		prerequisite = {
+		  focus = VLA_new_factories
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			560 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+		    }
+			build_railway = {
+				level = 1
+				build_only_on_allied = no
+				controller_priority = {
+					base = 1
+   
+					modifier = {
+						tag = JAP
+						add = 3
+					}
+					modifier = {
+						tag = VLA
+						add = 3
+					}
+				}
+				fallback = yes
+				path = { }
+				start_province = 12559
+				target_province = 4056
+			}
+   
+		}
+	}
+	focus = {
+		id = VLA_communist_north
+		icon = GFX_focus_SOV_third_rome
+		x = 16
+		y = 4
+
+		mutually_exclusive = { }
+		prerequisite = {
+		  focus = VLA_siberian_fascism
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		  560 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 1772
+		    }
+		  
+		  }
+		  561 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 12591
+		    }
+		  
+		  }
+		  add_popularity = {
+             ideology = communism
+             popularity = -0.05
+            }
+			add_opinion_modifier = {
+               target = FER
+               modifier = hostile_status 
+            }
+			FER = { 
+			   add_opinion_modifier = {
+                  target = VLA
+                  modifier = hostile_status   
+                }
+		    }
+		}
+	}
+	focus = {
+		id = VLA_failed_kingdom
+		icon = GFX_focus_SOV_third_rome
+		x = 16
+		y = 5
+
+		mutually_exclusive = {  }
+		prerequisite = {
+		  focus = VLA_communist_north
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		  561 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 12543
+		    }
+		  
+		  }
+		  561 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 7785
+		    }
+		  
+		  }
+		  add_popularity = {
+             ideology = monarchism
+             popularity = -0.03
+            }
+			add_opinion_modifier = {
+               target = CKK
+               modifier = hostile_status 
+            }
+			CKK = { 
+			   add_opinion_modifier = {
+                  target = VLA
+                  modifier = hostile_status   
+                }
+		    }
+		}
+	}
+	focus = {
+		id = VLA_pathetic_liberals
+		icon = GFX_focus_SOV_third_rome
+		x = 16
+		y = 6
+
+		mutually_exclusive = {  }
+		prerequisite = {
+		  focus = VLA_failed_kingdom
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		  561 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 7691
+		    }
+		  
+		  }
+		  561 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 1845
+		    }
+		  
+		  }
+		   561 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 1730
+		    }
+		  
+		  }
+		  add_popularity = {
+             ideology = democratic
+             popularity = -0.05
+            }
+			add_opinion_modifier = {
+               target = CKK
+               modifier = hostile_status 
+            }
+			CKK = { 
+			   add_opinion_modifier = {
+                  target = VLA
+                  modifier = hostile_status   
+                }
+		    }
+		}
+	}
+}

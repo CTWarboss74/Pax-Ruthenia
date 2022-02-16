@@ -1,0 +1,205 @@
+ideas = {
+    country = {
+		VLA_japanese_influence_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = VLA_japinf
+
+			modifier = {					
+                monthly_population = 0.01				
+                political_power_cost = 0.05
+				stability_factor = -0.02
+			}
+			targeted_modifier = {
+			  tag = JAP
+			  trade_cost_for_target_factor = 0.02
+			  extra_trade_to_target_factor = 0.02
+
+			  
+			}
+		}
+		VLA_japanese_influence_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = VLA_japinf
+
+			modifier = {					
+                monthly_population = 0.02			
+                political_power_cost = 0.75
+				stability_factor = -0.05
+			}
+			targeted_modifier = {
+			  tag = JAP
+			  trade_cost_for_target_factor = 0.05
+			  extra_trade_to_target_factor = 0.05
+
+			  
+			}
+		}
+		VLA_japanese_influence_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = VLA_japinf
+
+			modifier = {					
+                monthly_population = 0.03				
+                political_power_cost = 0.1
+				stability_factor = -0.075
+			}
+			targeted_modifier = {
+			  tag = JAP
+			  trade_cost_for_target_factor = 0.075
+			  extra_trade_to_target_factor = 0.075
+
+			  
+			}
+		}
+		VLA_japanese_influence_4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = VLA_japinf
+
+			modifier = {					
+                monthly_population = 0.05				
+                political_power_cost = 0.125
+				stability_factor = -0.1
+			}
+			targeted_modifier = {
+			  tag = JAP
+			  trade_cost_for_target_factor = 0.1
+			  extra_trade_to_target_factor = 0.1
+
+			  
+			}
+		}
+        VLA_fishing_economy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = VLA_fish
+
+			modifier = {					         	
+               industrial_capacity_factory = -0.1
+			   production_speed_industrial_complex_factor = -0.1
+			   production_speed_infrastructure_factor = -0.1
+			   industrial_capacity_dockyard = 0.05
+
+			}
+		}
+		VLA_jap_advisors = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = VLA_fish
+
+			modifier = {					         	           	
+              command_power_gain = -0.05
+              army_morale = 5
+			  army_org = 5
+			  breakthrough_factor = 0.05
+			  planning_speed = 0.1
+			}
+		}
+		JAP_vladivostok_imports = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = VLA_fish
+
+			modifier = {					         	           	
+              political_power_gain = 0.15
+			}
+			targeted_modifier = {
+			  tag = VLA
+			  extra_trade_to_target_factor = 0.2
+              trade_cost_for_target_factor = -0.1
+
+			}
+		}
+		VLA_vladivostok_imports = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = VLA_fish
+
+			modifier = {					         	           	
+              political_power_cost = 0.15
+			  stability_factor = -0.05
+			}
+			targeted_modifier = {
+			  tag = JAP
+			  cic_to_target_factor = 0.1
+
+
+			}
+		}
+    }
+}

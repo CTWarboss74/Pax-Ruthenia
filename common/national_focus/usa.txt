@@ -1,0 +1,900 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_USA_CONGRESS}
+
+focus_tree = {
+	id = usa_start_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 20
+			tag = USA
+		}
+		
+		modifier = {
+			add = 20
+			original_tag = USA
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+#	focus = {
+#		id = USA_
+#		#icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+	focus = {
+		id = USA_earls_tour
+		icon = GFX_focus_tour
+		x = 5
+		y = 0
+
+		mutually_exclusive = {}
+		prerequisite = {}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		allow_branch = { NOT = { has_global_flag = browder_dead } }	
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			country_event = {
+             id = usapr.1
+             days = 1
+            }
+			add_political_power = 10
+		}
+	}
+    focus = {
+		id = USA_the_west_coast
+		icon = GFX_focus_la
+		x = 2
+		y = 1
+
+		mutually_exclusive = {}
+		prerequisite = { focus = USA_earls_tour }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_political_power = 15
+			country_event = {
+             id = usapr.2
+             days = 1
+            }
+		}
+	}
+	focus = {
+		id = USA_greatlakes
+		icon = GFX_focus_chicago
+		x = 8
+		y = 1
+
+		mutually_exclusive = {}
+		prerequisite = { focus = USA_earls_tour }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_political_power = 15
+			country_event = {
+             id = usapr.3
+             days = 1
+            }
+		}
+	}
+	focus = {
+		id = USA_the_northeast
+		icon = GFX_focus_us_ny
+		x = 5
+		y = 1
+
+		mutually_exclusive = {}
+		prerequisite = { focus = USA_earls_tour }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_political_power = 15
+			country_event = {
+             id = usapr.4
+             days = 1
+            }
+		}
+	}
+	focus = {
+		id = USA_the_south
+		icon = GFX_focus_south
+		x = 5
+		y = 3
+
+		mutually_exclusive = {}
+		prerequisite = { focus = USA_the_northeast }
+		prerequisite = { focus = USA_the_west_coast }
+		prerequisite = { focus = USA_greatlakes }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_political_power = -50
+			country_event = {
+             id = usapr.5
+             days = 1
+            }
+		}
+	}
+	focus = {
+		id = USA_summon_the_council
+		icon = GFX_focus_council
+		x = 20
+		y = 0
+		allow_branch = { has_global_flag = browder_dead }
+		mutually_exclusive = {}
+		prerequisite = {}
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		  has_global_flag = browder_dead
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		   add_stability = 0.02
+		   create_country_leader = {
+	         name = "Emergency CPUSA Council"
+	         desc = "POLITICS_council_DESC"
+	         picture = "council.dds"
+	         expire = "1965.1.1"
+             ideology = stalinism
+	         traits = {
+		         no_clear_leader unstable_party
+	            }
+            }
+		}
+	}
+	focus = {
+		id = USA_organise_a_funeral
+		icon = GFX_focus_funeral
+		x = 20
+		y = 1
+
+		mutually_exclusive = {}
+		prerequisite = { focus = USA_summon_the_council }
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		    add_political_power = -50
+			country_event = {
+             id = usapr.8
+             days = 1
+            }
+		}
+	}
+	focus = {
+		id = USA_hunt_kkk
+		icon = GFX_focus_huntkkk
+		x = 20
+		y = 2
+
+		mutually_exclusive = {}
+		prerequisite = { focus = USA_organise_a_funeral }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_ideas = {
+			   usa_kkk1
+			}
+		}
+	}
+	focus = {
+		id = USA_who_helped
+		icon = GFX_focus_earlhelp
+		x = 22
+		y = 3
+
+		mutually_exclusive = {}
+		prerequisite = { focus = USA_hunt_kkk }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_war_support = 0.03
+			country_event = {
+             id = usapr.9
+             days = 1
+            }
+		}
+	}
+	focus = {
+		id = USA_kkk_at_home
+		icon = GFX_focus_kkkhome
+		x = 18
+		y = 3
+
+		mutually_exclusive = {}
+		prerequisite = { focus = USA_hunt_kkk }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		    add_war_support = -0.05
+			add_manpower = -100
+			add_political_power = -75
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+				producer = USA
+			}
+			swap_ideas = {
+			   add_idea = USA_kkk2
+			   remove_idea = USA_kkk1
+			}				
+		}
+	}
+	focus = {
+		id = USA_tanks_into_cities
+		icon = GFX_focus_citytank
+		x = 18
+		y = 4
+
+		mutually_exclusive = {}
+		prerequisite = { focus = USA_kkk_at_home }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_war_support = -0.05
+			add_manpower = -500
+			add_political_power = -100
+			swap_ideas = {
+			   add_idea = USA_kkk3
+			   remove_idea = USA_kkk2
+			}
+		}
+	}
+	focus = {
+		id = USA_bomb_kkk
+		icon = GFX_focus_bombkkk
+		x = 18
+		y = 5
+
+		mutually_exclusive = {}
+		prerequisite = { focus = USA_tanks_into_cities }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_war_support = -0.075
+			add_manpower = -1000
+			add_political_power = -200
+			swap_ideas = {
+			   add_idea = USA_kkk4
+			   remove_idea = USA_kkk3
+			}
+		}
+	}
+	focus = {
+		id = USA_investigate_britain
+		icon = GFX_focus_searcheng
+		x = 21
+		y = 4
+
+		mutually_exclusive = { focus = USA_investigate_germany }
+		prerequisite = { focus = USA_who_helped }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		  has_country_flag = blame_eng
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_war_support = 0.03
+			add_opinion_modifier = {
+                target = ENG
+                modifier = hostile_status 
+            }
+			ENG = {
+			   add_opinion_modifier = {
+                  target = USA
+                  modifier = hostile_status 
+                }
+			}
+		}
+	}
+	focus = {
+		id = USA_investigate_germany
+		icon = GFX_focus_searchger
+		x = 23
+		y = 4
+
+		mutually_exclusive = { focus = USA_investigate_britain }
+		prerequisite = { focus = USA_who_helped }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		  has_country_flag = blame_ger
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_war_support = 0.03
+			add_opinion_modifier = {
+                target = GER
+                modifier = hostile_status 
+            }
+			GER = {
+			   add_opinion_modifier = {
+                  target = USA
+                  modifier = hostile_status 
+                }
+			}
+		}
+	}
+	focus = {
+		id = USA_planes_over_london
+		icon = GFX_focus_bombuk
+		x = 21
+		y = 5
+
+		mutually_exclusive = { }
+		prerequisite = { focus = USA_investigate_britain}
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_war_support = 0.05
+			ENG = {
+			   country_event = {
+                 id = engpr.1
+                 days = 1
+                }
+			
+			}
+		}
+	}
+	focus = {
+		id = USA_blockade_north_sea
+		icon = GFX_focus_usblock
+		x = 23
+		y = 5
+
+		mutually_exclusive = { }
+		prerequisite = { focus = USA_investigate_germany }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_ideas = { USA_embargoed_germany }
+		}
+	}
+	focus = {
+		id = USA_power_struggle
+		icon = GFX_focus_usstruggle
+		x = 20
+		y = 6
+
+		mutually_exclusive = { }
+		prerequisite = {
+		 focus = USA_planes_over_london
+		 focus = USA_blockade_north_sea	 
+		}
+		prerequisite = { focus = USA_bomb_kkk }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_political_power = 50
+			country_event = {
+             id = usapr.12
+             days = 1
+            }
+
+		}
+	}
+	focus = {
+		id = USA_the_trotskyist
+		icon = GFX_focus_trotskyist
+		x = 9
+		y = 7
+
+		mutually_exclusive = { }
+		prerequisite = { focus = USA_power_struggle }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+	     always = no
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_the_leninist
+		icon = GFX_focus_leninist
+		x = 12
+		y = 7
+
+		mutually_exclusive = { }
+		prerequisite = { focus = USA_power_struggle }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		always = no
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_the_reformer
+		icon = GFX_focus_reformer
+		x = 15
+		y = 7
+
+		mutually_exclusive = { }
+		prerequisite = { focus = USA_power_struggle }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		always = no
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_the_russian
+		icon = GFX_focus_usrussian
+		x = 18
+		y = 7
+
+		mutually_exclusive = { }
+		prerequisite = { focus = USA_power_struggle }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		always = no
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_the_hardliner
+		icon = GFX_focus_gus
+		x = 21
+		y = 7
+
+		mutually_exclusive = { }
+		prerequisite = { focus = USA_power_struggle }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		always = no
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_the_lawyer
+		icon = GFX_focus_lawyer
+		x = 24
+		y = 7
+
+		mutually_exclusive = { }
+		prerequisite = { focus = USA_power_struggle }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		always = no
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_the_syndicalist
+		icon = GFX_focus_ussyndicalist
+		x = 27
+		y = 7
+
+		mutually_exclusive = { }
+		prerequisite = { focus = USA_power_struggle }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		always = no
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_the_christian
+		icon = GFX_focus_uschristian
+		x = 30
+		y = 7
+
+		mutually_exclusive = { }
+		prerequisite = { focus = USA_power_struggle }
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		always = no
+		}
+		
+		bypass = {
+  
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			
+		}
+	}
+}
