@@ -1,0 +1,30 @@
+
+state={
+	id=39
+	name="STATE_39" # South Tyrol
+	manpower = 221650
+	
+	state_category = town
+	
+	resources = {
+		aluminium = 14
+		steel = 4
+	}
+
+	history={
+		victory_points = {
+			11598 1
+		}
+		owner = ITA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = ITA
+		add_core_of = AUS
+	}
+local_supplies= 13.0 
+	provinces={
+		656 6631 9598 11598 
+	}
+}

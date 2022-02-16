@@ -1,0 +1,43 @@
+
+state={
+	id=54
+	name="STATE_54"
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			11544 20 
+		}
+		victory_points = {
+			20058 1 
+		}
+		victory_points = {
+			20057 1 
+		}
+		victory_points = {
+			20056 1 
+		}
+		add_core_of = GER
+		1939.1.1 = {
+			buildings = {
+				air_base = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		561 3474 6421 6594 9416 9557 9572 11404 11417 11529 11544 13116 20056 20057 20058 
+	}
+	manpower=2508159
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,48 @@
+
+state={
+	id=20
+	name="STATE_20" # Rhone
+
+	state_category = city
+	
+	manpower = 2173200
+	
+	resources = {
+		steel = 28
+		aluminium = 32 
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			6613 20 
+		}
+		victory_points = {
+			19970 1 
+		}
+		victory_points = {
+			19972 1 
+		}
+		victory_points = {
+			19973 1 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 4
+		}
+		add_core_of = OCC
+		add_core_of = FRA
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+				industrial_complex = 3
+			}
+		}
+	}
+local_supplies= 2.0 
+	provinces={
+		3770 6613 6786 9728 9732 11593 11716 11794 19970 19972 19973  
+	}
+}
