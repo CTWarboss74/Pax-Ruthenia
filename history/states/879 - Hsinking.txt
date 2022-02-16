@@ -1,0 +1,28 @@
+
+state={
+	id=879
+	name="STATE_879" # Kirin
+	manpower = 3240000
+	
+	state_category = town
+
+	history={
+		owner = MAN
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		
+		victory_points = { 4572 3 }
+		victory_points = { 916 1 }
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		
+	}
+
+	provinces={
+		887 916 930 945 1567 3888 3913 3932 3949 4503 4572 4642 6868 6905 6947 7663 9759 9803 9848 9866 11744 11781 
+	}
+}

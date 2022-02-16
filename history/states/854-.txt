@@ -1,0 +1,29 @@
+
+state={
+	id=854
+	name="STATE_854" # Hebei
+
+	state_category = rural
+	
+	manpower = 4142900
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		
+		victory_points = { 4093 1 }
+		
+		buildings = {
+			infrastructure = 1
+		}
+
+		1938.10.25 = {
+			controller = JAP
+		}
+	}
+
+	provinces={
+		1188 4093 4190 4208 6828 7000 10053 12062 19876 19871 19867 19865
+	}
+}

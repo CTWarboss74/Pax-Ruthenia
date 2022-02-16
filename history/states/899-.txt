@@ -1,0 +1,33 @@
+
+state={
+	id=899
+	name="STATE_899"
+	resources={
+		steel = 14
+		aluminium = 4
+	}
+	
+	state_category = large_city
+
+	history={
+		owner = ITA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		add_core_of = ITA
+		1939.1.1 = {
+			buildings = {
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		628 3657 6656 9613
+	}
+	manpower=1263151
+	buildings_max_level_factor=1.000
+}

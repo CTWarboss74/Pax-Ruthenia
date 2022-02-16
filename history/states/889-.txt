@@ -1,0 +1,27 @@
+
+state={
+	id=889
+	name="STATE_889" # Birobidzhan
+	manpower = 150000
+
+	state_category = rural
+	
+	resources = {
+		steel = 12
+	}
+	
+	history={
+		owner = VLA
+		add_core_of = VLA
+		
+		victory_points = { 7763 1 }
+		
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		1802 4246 4701 4725 4779 4829 7616 7763 7801 10655 12654 
+	}
+}

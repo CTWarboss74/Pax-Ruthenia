@@ -1,0 +1,22 @@
+
+state={
+	id=891
+	name="STATE_891"
+	
+	manpower = 341465
+	
+	state_category = rural
+
+	history={
+		owner = JAP
+
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = JAP
+	}
+
+	provinces={
+		3787 3811 3977 6684 6838 6961 6989 9762 9895 9926 11745 11750 11879 11904 
+	}
+}
