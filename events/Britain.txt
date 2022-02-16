@@ -1,0 +1,77 @@
+﻿add_namespace = engpr
+
+# Tizard mission event for USA
+country_event = {
+	id = engpr.1
+	title = "American planes over London"
+	desc = engpr.1.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = engpr.1.a	#sounds good
+		ai_chance = { factor = 90 }
+		add_political_power = -10
+		add_stability = -0.05
+		USA = {
+			   country_event = {
+                 id = usapr.10
+                 days = 1
+                }
+			
+			}
+	}
+}
+country_event = {
+	id = engpr.2
+	title = "Americans Apologise"
+	desc = engpr.2.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = engpr.2.a	#sounds good
+		add_political_power = 50
+		add_stability = 0.05
+		remove_opinion_modifier = {
+                target = ENG
+                modifier = hostile_status 
+            }
+			ENG = {
+			   remove_opinion_modifier = {
+                  target = USA
+                  modifier = hostile_status 
+                }
+			}
+    }
+}
+country_event = {
+	id = engpr.3
+	title = "Americans refuse"
+	desc = engpr.3.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = engpr.3.a	#sounds good
+		add_political_power = 50
+		add_stability = 0.05
+    }
+	option = {
+		name = engpr.3.b	#sounds good
+		add_political_power = 50
+		add_stability = -0.05
+		add_war_support = 0.05
+		USA = {
+			   country_event = {
+                 id = usapr.11
+                 days = 1
+                }
+			
+			}
+		
+    }
+}

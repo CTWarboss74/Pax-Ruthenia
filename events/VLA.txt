@@ -1,0 +1,32 @@
+﻿add_namespace = vlapr
+
+# Tizard mission event for USA
+country_event = {
+	id = vlapr.1
+	title = "Our Place in Siberia"
+	desc = vlapr.1.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = vlapr.1.a	#sounds good
+		ai_chance = { factor = 90 }
+		add_political_power = 50
+	}
+}
+country_event = {
+	id = vlapr.2
+	title = "Our Allies Across the Sea"
+	desc = vlapr.2.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = vlapr.2.a	#sounds good
+		ai_chance = { factor = 90 }
+		add_political_power = 5
+	}
+}
+

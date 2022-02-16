@@ -1,0 +1,17 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_decision_cat_germanization"
+		texturefile = "gfx/interface/decisions/decision_cat_germanization.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_germanizations"
+		texturefile = "gfx/interface/decisions/decision_germanizations.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_Germanizationxd"
+		texturefile = "gfx/interface/decisions/GER_Germanizationxd.dds"
+	}
+	
+	
+	}

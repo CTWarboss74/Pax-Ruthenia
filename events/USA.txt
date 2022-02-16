@@ -1,0 +1,839 @@
+﻿###########################
+# USA Events
+###########################
+
+add_namespace = usapr
+
+# Amelia Eartharts wants to join the USAAC
+country_event = {
+	id = usapr.1
+	title = "Browder's Tour Begins"
+	desc = usapr.1.d
+	picture = GFX_report_event_browder_tour
+	
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	
+	
+	option = { # Let her join
+		name = usapr.1.a
+		add_stability = -0.02	
+		custom_effect_tooltip = USA_fear_of_assassination
+	}
+}
+country_event = {
+	id = usapr.2
+	title = "The West Coast"
+	desc = usapr.2.d
+	picture = GFX_report_event_westcoast
+	
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	
+	
+	option = { # Let her join
+		name = usapr.2.a
+		add_stability = 0.01
+		custom_effect_tooltip = USA_fear_of_assassination2
+	}
+}
+country_event = {
+	id = usapr.3
+	title = "The Great Lakes"
+	desc = usapr.3.d
+	picture = GFX_report_event_greatlakes
+	
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	
+	
+	option = { # Let her join
+		name = usapr.3.a
+		add_stability = 0.01
+	    custom_effect_tooltip = USA_fear_of_assassination3
+
+	}
+}
+country_event = {
+	id = usapr.4
+	title = "The North East"
+	desc = usapr.4.d
+	picture = GFX_report_event_newyork
+	
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	
+	
+	option = { # Let her join
+		name = usapr.4.a
+		add_stability = 0.01
+	    custom_effect_tooltip = USA_fear_of_assassination4
+
+	}
+}
+country_event = {
+	id = usapr.5
+	title = "Starting with Texas"
+	desc = usapr.5.d
+	picture = GFX_report_event_texas
+	
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	
+	
+	option = { # Let her join
+		name = usapr.5.a
+		add_stability = -0.01
+		country_event = {
+          id = usapr.6
+          days = 1
+          random = 1
+          random_days = 1
+        }
+	    
+
+	}
+}
+country_event = {
+	id = usapr.6
+	title = "New Orleans"
+	desc = usapr.6.d
+	picture = GFX_report_event_neworleans
+	
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	
+	
+	option = { # Let her join
+		name = usapr.6.a
+		add_stability = -0.03
+	    country_event = {
+          id = usapr.7
+          days = 1
+          random = 1
+          random_days = 1
+        }
+
+	}
+}
+country_event = {
+	id = usapr.7
+	title = "Jacksonville....."
+	desc = usapr.7.d
+	picture = GFX_report_event_browderdeath
+	
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	
+	
+	option = { # Let her join
+		name = usapr.7.a
+		add_stability = -0.1
+        set_global_flag = browder_dead	
+        kill_country_leader = yes
+		mark_focus_tree_layout_dirty = yes	
+        complete_national_focus	= USA_summon_the_council	
+	}
+}
+country_event = {
+	id = usapr.8
+	title = "Browder's Funeral"
+	desc = usapr.8.d
+	picture = GFX_report_event_usa_funeral
+	
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	
+	
+	option = { # Let her join
+		name = usapr.8.a
+		add_stability = -0.03  
+
+	}
+}
+country_event = {
+	id = usapr.9
+	title = "Who to blame?"
+	desc = usapr.9.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	
+	
+	option = { # Let her join
+		name = usapr.9.a
+		set_country_flag = blame_eng
+		add_political_power = -50
+	}
+	option = { # Let her join
+		name = usapr.9.b
+		set_country_flag = blame_ger
+		add_political_power = -50
+		
+	}
+}
+country_event = {
+	id = usapr.10
+	title = "Planes over London"
+	desc = usapr.10.d
+	picture = GFX_report_event_fighters
+	
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	
+	
+	option = { # Let her join
+		name = usapr.10.a
+		add_war_support = -0.05
+		add_political_power = 35
+		ENG = {
+			   country_event = {
+                 id = engpr.2
+                 days = 1
+                 random = 1
+                 random_days = 1
+                }
+			
+			}
+	}
+	option = { # Let her join
+		name = usapr.10.b
+		add_war_support = 0.03
+		add_political_power = 100
+		ENG = {
+			   country_event = {
+                 id = engpr.3
+                 days = 1
+                 random = 1
+                 random_days = 1
+                }
+			
+			}
+	}
+}
+country_event = {
+	id = usapr.11
+	title = "Britain flies planes over Dublin"
+	desc = usapr.11.d
+	picture = GFX_report_event_fighters
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Let her join
+		name = usapr.11.a
+		ai_chance = { factor = 90 }
+		add_war_support = -0.05
+		add_political_power = 75
+		remove_opinion_modifier = {
+                target = ENG
+                modifier = hostile_status 
+            }
+			ENG = {
+			   remove_opinion_modifier = {
+                  target = USA
+                  modifier = hostile_status 
+                }
+			}
+	}
+	option = { # Let her join
+		name = usapr.11.b
+	    ai_chance = { factor = 10 }
+		add_war_support = 0.1
+		declare_war_on = {
+          target = ENG
+          type = annex_everything
+        }
+	}
+}
+country_event = {
+	id = usapr.12
+	title = "The 3rd People's Congress of America"
+	desc = usapr.12.d
+	picture = GFX_report_event_usa_election_generic
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Let her join
+		name = usapr.12.a
+		ai_chance = { factor = 90 }
+		country_event = {
+             id = usapr.13
+             days = 1
+            }
+	}
+}
+country_event = {
+	id = usapr.13
+	title = "First Issue: The Capital"
+	desc = usapr.13.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Let her join
+		name = usapr.13.a
+		ai_chance = { factor = 33 }
+		add_victory_points = {
+			province = 9671
+			value = 10
+		}
+		set_capital = {
+			state = 378 
+			remember_old_capital = no
+		}
+		country_event = {
+             id = usapr.14
+             days = 1
+            }
+	}
+	option = { # Let her join
+		name = usapr.13.b
+		ai_chance = { factor = 33 }
+		add_victory_points = {
+			province = 3878
+			value = 10
+		}
+		set_capital = {
+			state = 358 
+			remember_old_capital = no
+		}
+		country_event = {
+             id = usapr.14
+             days = 1
+            }
+	}
+	option = { # Let her join
+		name = usapr.13.c
+		ai_chance = { factor = 33 }
+		add_victory_points = {
+			province = 9450
+			value = 10
+		}
+		set_capital = {
+			state = 395
+			remember_old_capital = no
+		}
+		country_event = {
+             id = usapr.14
+             days = 1
+            }
+	}
+}
+country_event = {
+	id = usapr.14
+	title = "Second Issue: Fate of Washington DC"
+	desc = usapr.14.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Let her join
+		name = usapr.14.a
+		ai_chance = { factor = 33 }
+		add_victory_points = {
+			province = 3957
+			value = -35
+		}
+        set_province_name = { id = 3957 name = "Browder" }
+		country_event = {
+             id = usapr.15
+             days = 1
+            }
+	}
+	option = { # Let her join
+		name = usapr.14.b
+		ai_chance = { factor = 33 }
+		add_victory_points = {
+			province = 3957
+			value = -5
+		}
+		set_province_name = { id = 3957 name = "Douglass" }
+		country_event = {
+             id = usapr.15
+             days = 1
+            }
+	}
+}
+country_event = {
+	id = usapr.15
+	title = "Third Issue: The Four Year Plan"
+	desc = usapr.15.d
+	picture = GFX_report_event_generic_factory
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Let her join
+		name = usapr.15.a
+		ai_chance = { factor = 33 }
+		remove_ideas = { USA_four_year_plan }
+		country_event = {
+             id = usapr.16
+             days = 1
+            }
+	}
+	option = { # Let her join
+		name = usapr.15.b
+		ai_chance = { factor = 33 }
+		modify_timed_idea = {
+			idea = USA_four_year_plan
+			days = 365
+		}
+		country_event = {
+             id = usapr.16
+             days = 1
+            }
+	}
+	option = { # Let her join
+		name = usapr.15.c
+		ai_chance = { factor = 33 }
+		add_political_power = 25
+		country_event = {
+             id = usapr.16
+             days = 1
+            }
+	}
+}
+country_event = {
+	id = usapr.16
+	title = "Fourth Issue: The Klan"
+	desc = usapr.16.d
+	picture = GFX_report_event_generic_battle
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Let her join
+		name = usapr.16.a
+		ai_chance = { factor = 33 }
+		remove_ideas = { usa_kkk4 }
+		add_stability = -0.1
+		add_war_support = -0.05
+		add_political_power = -100
+		country_event = {
+             id = usapr.17
+             days = 1
+            }
+	}
+	option = { # Let her join
+		name = usapr.16.b
+		ai_chance = { factor = 33 }
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.03
+		}
+		add_stability = 0.05
+		country_event = {
+             id = usapr.17
+             days = 1
+            }
+	}
+}
+country_event = {
+	id = usapr.17
+	title = "Fifth Issue: The Next General Secretary"
+	desc = usapr.17.d
+	picture = GFX_report_event_generic_battle
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Let her join
+		name = usapr.17.a
+		ai_chance = { factor = 33 }
+		remove_country_leader_trait = no_clear_leader
+		add_political_power = -50
+		country_event = {
+             id = usapr.18
+             days = 1
+            }
+	}
+	option = { # Let her join
+		name = usapr.17.b
+		ai_chance = { factor = 33 }
+		remove_country_leader_trait = no_clear_leader
+		add_political_power = -50
+	}
+}
+country_event = {
+	id = usapr.18
+	title = "Fate of the non-CPUSA bloc"
+	desc = usapr.18.d
+	picture = GFX_report_event_generic_battle
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Let her join
+		name = usapr.18.a
+		ai_chance = { factor = 33 }
+		add_stability = 0.03
+		add_manpower = -50
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = syndicalism
+			popularity = 0.05
+		}
+		country_event = {
+             id = usapr.19
+             days = 1
+            }
+	}
+	option = { # Let her join
+		name = usapr.18.b
+		ai_chance = { factor = 33 }
+		add_stability = -0.03
+		set_party_name = { 
+			ideology = socdem 
+			long_name = USA_socdem_cpusa_long
+			name = USA_socdem_cpusa 
+		}
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.05
+		}
+		country_event = {
+             id = usapr.19
+             days = 1
+            }
+	}
+}
+country_event = {
+	id = usapr.19
+	title = "Earl Browder's Favourite"
+	desc = usapr.19.d
+	picture = GFX_report_event_generic_battle
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Let her join
+		name = usapr.19.a
+		ai_chance = { factor = 33 }
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.05
+		}
+		country_event = {
+             id = usapr.20
+             days = 1
+            }
+	}
+	option = { # Let her join
+		name = usapr.19.b
+		ai_chance = { factor = 33 }
+		add_stability = -0.03
+		add_popularity = {
+			ideology = marxism
+			popularity = -0.1
+		}			
+		retire_character = USA_gus_hall	
+		create_country_leader = {
+	         name = "Eugene Dennis"
+	         desc = "POLITICS_council_DESC"
+	         picture = "council.dds"
+	         expire = "1965.1.1"
+             ideology = leninism_2
+	         traits = {            }
+            }
+	}
+}
+country_event = {
+	id = usapr.20
+	title = "Documents discovered about Eugene Dennis"
+	desc = usapr.20.d
+	picture = GFX_report_event_generic_battle
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Let her join
+		name = usapr.20.a
+		ai_chance = { factor = 33 }
+		add_popularity = {
+			ideology = marxism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = syndicalism
+			popularity = 0.05
+		}
+		country_event = {
+             id = usapr.22
+             days = 1
+            }
+	}
+	option = { # Let her join
+		name = usapr.20.b
+		ai_chance = { factor = 33 }
+		add_stability = -0.03
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.05
+		}			
+		add_manpower = -1
+		country_event = {
+             id = usapr.21
+             days = 1
+            }
+	}
+}
+country_event = {
+	id = usapr.21
+	title = "Gus meets with William Z. Foster"
+	desc = usapr.21.d
+	picture = GFX_report_event_generic_battle
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Let her join
+		name = usapr.21.a
+		ai_chance = { factor = 33 }
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = syndicalism
+			popularity = 0.03
+		}
+		set_politics = {
+			ruling_party = marxism
+			elections_allowed = no
+			last_election = "1935.12.17"
+		}
+		custom_effect_tooltip = USA_ireland_warning
+	}
+	option = { # Let her join
+		name = usapr.21.b
+		ai_chance = { factor = 33 }
+		add_stability = -0.03
+		add_popularity = {
+			ideology = syndicalism
+			popularity = -0.05
+		}			
+		add_manpower = -1
+		set_politics = {
+			ruling_party = marxism
+			elections_allowed = no
+			last_election = "1935.12.17"
+		}
+		custom_effect_tooltip = USA_ireland_warning
+	}
+}
+country_event = {
+	id = usapr.22
+	title = "Flaws in the Authoritarian Branch"
+	desc = usapr.22.d
+	picture = GFX_report_event_generic_battle
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Let her join
+		name = usapr.22.a
+		ai_chance = { factor = 33 }
+		add_popularity = {
+			ideology = marxism
+			popularity = -0.05
+		}
+		add_manpower = -1
+		retire_character = USA_gus_hall	
+		create_country_leader = {
+	         name = "Eugene Dennis"
+	         desc = "POLITICS_council_DESC"
+	         picture = "council.dds"
+	         expire = "1965.1.1"
+             ideology = leninism_2
+	         traits = {            }
+            }
+		add_popularity = {
+			ideology = syndicalism
+			popularity = 0.05
+		}
+		set_politics = {
+			ruling_party = syndicalism
+			elections_allowed = no
+			last_election = "1935.12.17"
+		}
+		
+	}
+	option = { # Let her join
+		name = usapr.22.b
+		ai_chance = { factor = 33 }
+		add_stability = -0.03
+		add_popularity = {
+			ideology = syndicalism
+			popularity = -0.05
+		}	
+		add_manpower = -1
+		retire_character = USA_gus_hall	
+		create_country_leader = {
+	         name = "Eugene Dennis"
+	         desc = "POLITICS_council_DESC"
+	         picture = "council.dds"
+	         expire = "1965.1.1"
+             ideology = leninism_2
+	         traits = {            }
+            }		
+		set_politics = {
+			ruling_party = marxism
+			elections_allowed = no
+			last_election = "1935.12.17"
+		}
+	}
+}
+country_event = {
+	id = usapr.23
+	title = "Benjamin J. Davis invites Eugene and William to a meeting"
+	desc = usapr.23.d
+	picture = GFX_report_event_generic_battle
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Let her join
+		name = usapr.23.a
+		ai_chance = { factor = 33 }
+		add_popularity = {
+			ideology = marxism
+			popularity = -0.02
+		}
+		add_popularity = {
+			ideology = syndicalism
+			popularity = -0.02
+		}			
+		add_political_power = 50
+	}
+	option = { # Let her join
+		name = usapr.23.b
+		ai_chance = { factor = 33 }
+	    add_political_power = -50
+	}
+}
+country_event = {
+	id = usapr.24
+	title = "The Meeting..."
+	desc = usapr.24.d
+	picture = GFX_report_event_generic_battle
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Let her join
+		name = usapr.24.a
+		ai_chance = { factor = 33 }
+		create_country_leader = {
+	         name = "Benjamin J. Davis"
+	         desc = "POLITICS_council_DESC"
+	         picture = "council.dds"
+	         expire = "1965.1.1"
+             ideology = leninism_2
+	         traits = {            }
+            }	
+	}
+	option = { # Let her join
+		name = usapr.24.b
+		ai_chance = { factor = 33 }
+	    add_political_power = 50
+		
+	}
+	option = { # Let her join
+		name = usapr.24.b
+		ai_chance = { factor = 33 }
+	    add_political_power = 50
+	}
+}
+country_event = {
+	id = usapr.25
+	title = "The Party Election"
+	desc = usapr.25.d
+	picture = GFX_report_event_generic_battle
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Let her join
+		name = usapr.25.a
+		ai_chance = { factor = 33 }
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		create_country_leader = {
+	         name = "Benjamin J. Davis"
+	         desc = "POLITICS_council_DESC"
+	         picture = "council.dds"
+	         expire = "1965.1.1"
+             ideology = leninism_2
+	         traits = {            }
+            }	
+	}
+	option = { # Let her join
+		name = usapr.25.b
+		ai_chance = { factor = 33 }
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.05
+		}
+	    create_country_leader = {
+	         name = "Eugene Dennis"
+	         desc = "POLITICS_council_DESC"
+	         picture = "council.dds"
+	         expire = "1965.1.1"
+             ideology = leninism_2
+	         traits = {            }
+            }		
+		set_politics = {
+			ruling_party = marxism
+			elections_allowed = no
+			last_election = "1935.12.17"
+		}
+	}
+	option = { # Let her join
+		name = usapr.25.b
+		ai_chance = { factor = 33 }
+		add_popularity = {
+			ideology = syndicalism
+			popularity = 0.05
+		}
+		set_politics = {
+			ruling_party = syndicalism
+			elections_allowed = no
+			last_election = "1935.12.17"
+		}
+	}
+}
