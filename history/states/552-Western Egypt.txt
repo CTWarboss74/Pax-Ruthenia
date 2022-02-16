@@ -1,0 +1,23 @@
+
+state={
+	id=552
+	name="STATE_552"
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = EGY
+
+	}
+
+	provinces={
+		992 1143 2064 7216 10127 10869 10907 12099 12733 12764 12816 13247 13248 13249 13251 13252 13253 13254 13255 13256 13257 13259 
+	}
+	manpower=18539
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+        impassable=yes
+}

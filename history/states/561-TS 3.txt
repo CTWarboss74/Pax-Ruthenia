@@ -1,0 +1,20 @@
+
+state={
+	id=561
+	name="STATE_561" # Amur
+	manpower = 225000
+	
+	state_category = rural
+
+	history={
+		owner = CKK
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = CKK
+	}
+
+	provinces={
+		1845 7691 7785 7851 12543 12660 
+	}
+}
