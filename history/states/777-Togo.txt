@@ -1,0 +1,30 @@
+
+state={
+	id=777
+	name="STATE_777"
+
+	history={
+		owner = FRA
+		add_core_of = TOG
+		victory_points = {
+			1951 1 
+		}
+		buildings = {
+			infrastructure = 2
+			1951 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1951 13731 13735 13741 13742 
+	}
+	manpower=562946
+	#1101346
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
