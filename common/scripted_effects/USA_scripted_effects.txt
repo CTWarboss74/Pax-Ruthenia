@@ -1,0 +1,190 @@
+#Add to scripted triggers if more levels of hyper inflation is added
+   USA_power_struggle_end = {
+        if = {
+			limit = { 
+			 check_variable = { var_trotskyist < var_leninist } 
+			 check_variable = { var_trotskyist < var_reformer } 
+			 check_variable = { var_trotskyist < var_russian } 
+			 check_variable = { var_trotskyist < var_hardliner } 
+			 check_variable = { var_trotskyist < var_lawyer } 
+			 check_variable = { var_trotskyist < var_syndicalist } 
+			 check_variable = { var_trotskyist < var_christian  } 
+			}
+		    add_popularity = {
+			 ideology = marxism
+			 popularity = 0.1
+			}
+			complete_national_focus = USA_the_trotskyist
+		}
+		else_if = {
+	     limit = {
+		      check_variable = { var_leninist < var_trotskyist } 
+			  check_variable = { var_leninist < var_reformer  } 
+			  check_variable = { var_leninist < var_russian  } 
+			  check_variable = { var_leninist < var_hardliner  } 
+			  check_variable = { var_leninist < var_lawyer  } 
+			  check_variable = { var_leninist < var_syndicalist  } 
+			  check_variable = { var_leninist < var_christian } 
+		    }
+	     add_popularity = {
+			 ideology = marxism
+			 popularity = 0.1
+			}
+			complete_national_focus = USA_the_leninist
+		}
+		else_if = {
+			limit = { 
+			  check_variable = {  var_reformer < var_trotskyist  } 
+			  check_variable = { var_reformer < var_leninist  } 
+			  check_variable = { var_reformer < var_russian  } 
+			  check_variable = {  var_reformer < var_hardliner  } 
+			  check_variable = { var_reformer < var_lawyer } 
+			  check_variable = { var_reformer < var_syndicalist  } 
+			  check_variable = { var_reformer < var_christian } 
+			}
+			add_popularity = {
+			 ideology = liberal
+			 popularity = 0.1
+			}
+			complete_national_focus = USA_the_reformer
+		}
+		else_if = {
+		 limit = { 
+		     check_variable = { var_russian < var_trotskyist  } 
+			 check_variable = { var_russian < var_leninist  } 
+			 check_variable = { var_russian < var_reformer  } 
+			 check_variable = { var_russian < var_hardliner  } 
+			 check_variable = { var_russian < var_lawyer  } 
+			 check_variable = { var_russian < var_syndicalist } 
+			 check_variable = { var_russian < var_christian  } 
+		    }
+			add_popularity = {
+			   ideology = commmunism
+			   popularity = 0.1
+			}
+			complete_national_focus = USA_the_russian
+		}
+		else_if = {
+		 limit = { 
+		     check_variable = { var_hardliner < var_trotskyist  } 
+			 check_variable = { var_hardliner < var_leninist  } 
+			 check_variable = { var_hardliner < var_reformer  } 
+			 check_variable = { var_hardliner < var_russian  } 
+			 check_variable = { var_hardliner < var_lawyer  } 
+			 check_variable = { var_hardliner < var_syndicalist  } 
+			 check_variable = { var_hardliner < var_christian } 
+			}
+			add_popularity = {
+			  ideology = marxism
+		      popularity = 0.1
+			}
+			complete_national_focus = USA_the_hardliner
+		}
+	    else_if = {
+			limit = { 
+			 check_variable = { var_lawyer < var_trotskyist  } 
+			 check_variable = { var_lawyer < var_leninist  } 
+			 check_variable = { var_lawyer < var_reformer  } 
+			 check_variable = { var_lawyer < var_russian } 
+			 check_variable = { var_lawyer < var_hardliner } 
+			 check_variable = { var_lawyer < var_syndicalist } 
+			 check_variable = { var_lawyer < var_christian  } 
+			}
+			add_popularity = {
+			    ideology = marxism
+				popularity = 0.1
+		    }
+			complete_national_focus = USA_the_lawyer
+		}   
+        else_if = {
+			limit = {
+			 check_variable = { var_syndicalist < var_trotskyist  } 
+			 check_variable = { var_syndicalist < var_leninist  } 
+			 check_variable = { var_syndicalist < var_reformer  } 
+			 check_variable = { var_syndicalist < var_russian  } 
+			 check_variable = { var_syndicalist < var_hardliner  } 
+			 check_variable = { var_syndicalist < var_lawyer  } 
+			 check_variable = { var_syndicalist < var_christian } 
+			}
+			add_popularity = {
+			    ideology = syndicalism
+				popularity = 0.1
+			}
+		    complete_national_focus = USA_the_syndicalist
+		} 
+        else_if = {
+			limit = { 
+			 check_variable = { var_christian < var_trotskyist  } 
+			 check_variable = { var_christian < var_leninist  } 
+			 check_variable = { var_christian < var_reformer  } 
+			 check_variable = { var_christian < var_russian  } 
+			 check_variable = { var_christian < var_hardliner  } 
+			 check_variable = { var_christian < var_syndicalist  } 
+			 check_variable = { var_christian < var_syndicalist  } 
+			}
+			add_popularity = {
+			   ideology = syndicalism
+			   popularity = 0.1
+			}
+		    complete_national_focus = USA_the_christian
+		} 			
+    }
+	VLA_jap_up = {
+		if = {
+		  limit = { has_idea = { VLA_japanese_influence_1 }
+		  swap_ideas = {		  
+		      remove_idea = VLA_japanese_influence_1
+			  add_idea = VLA_japanese_influence_2
+		    }
+		}
+		else_if = {
+		  limit = { has_idea = { VLA_japanese_influence_2 }
+		  swap_ideas = {
+			  remove_idea = VLA_japanese_influence_2
+			  add_idea = VLA_japanese_influence_3
+		    }
+		}
+		else_if = {
+		  limit = { has_idea = { VLA_japanese_influence_3 }
+		  swap_ideas = {
+			  remove_idea = VLA_japanese_influence_3
+			  add_idea = VLA_japanese_influence_4
+		    }
+		}
+		else_if = {
+		  limit = { 
+		     NOT = { has_idea = { VLA_japanese_influence_1 }
+			 NOT = { has_idea = { VLA_japanese_influence_2 }
+			 NOT = { has_idea = { VLA_japanese_influence_3 }
+			 NOT = { has_idea = { VLA_japanese_influence_4 }
+		    }
+		    add_ideas = { VLA_japanese_influence_1 }
+		}
+	}
+	VLA_jap_down = {
+		if = {
+		  limit = { has_idea = { VLA_japanese_influence_1 }
+		  remove_ideas = { VLA_japanese_influence_1 }
+		}
+		else_if = {
+		  limit = { has_idea = { VLA_japanese_influence_2 }
+		  swap_ideas = {
+		      remove_idea = VLA_japanese_influence_2
+			  add_idea = VLA_japanese_influence_1
+		    }
+		}
+		else_if = {
+		  limit = { has_idea = { VLA_japanese_influence_3 }
+		  swap_ideas = {
+			  remove_idea = VLA_japanese_influence_3
+			  add_idea = VLA_japanese_influence_2
+		    }
+		}
+		else_if = {
+		  limit = { has_idea = { VLA_japanese_influence_3 }
+		  swap_ideas = {
+			  remove_idea = VLA_japanese_influence_3
+			  add_idea = VLA_japanese_influence_4
+		    }
+		}
+	}

@@ -1,0 +1,228 @@
+activate_name_root = {
+
+        if = { limit = { ROOT = { tag = JAP } }
+		    apply_japanese_name = yes
+	    }
+		
+	    else_if = { limit = { ROOT = { tag = KOR } }
+		    apply_korean_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { is_chinese_speaking_countries = yes } }
+			apply_chinese_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { is_german_speaking_countries = yes } }
+		    apply_german_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { is_czechoslovak_country = yes } }
+		    apply_czechoslovak_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = POL } }
+			apply_polish_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = HUN }}
+		    apply_hungarian_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { is_romanian_speaking_countries = yes } }
+			apply_romanian_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = ITA }}
+			apply_italian_name = yes
+		}
+			
+		else_if = { limit = { ROOT = { tag = GRE } }
+			apply_greek_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = TUR } }
+			apply_turkish_name = yes
+		}
+	
+		else_if = { limit = { ROOT = { tag = BUL } }
+			apply_bulgarian_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { is_albanian_speaking_countries = yes } }
+			apply_albanian_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { is_yugoslavian_countries = yes } }
+			apply_yugoslavian_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = EST } }
+			apply_estonian_name = yes
+		}
+	
+		else_if = { limit = { ROOT = { tag = LAT } }
+			apply_latvian_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = LIT } }
+			apply_lithuanian_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { is_dutch_speaking_countries = yes } }
+			apply_dutch_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { is_french_speaking_countries = yes } }
+            apply_french_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = LUX } }
+			apply_luxembourgish_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { is_spanish_speaking_countries = yes } }
+			apply_spanish_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { is_portuguese_speaking_countries = yes } }
+			apply_portuguese_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = FIN } }
+		    apply_finnish_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = NOR } }
+			apply_norwegian_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = SWE } }
+			apply_swedish_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = DEN } }
+			apply_danish_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = SOV } }
+			apply_russian_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = BLR } }
+			apply_belarusian_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = UKR } }
+		    apply_ukrainian_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { is_arab_speaking_countries = yes } }
+			apply_arab_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { is_english_countries = yes } }
+			apply_english_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = RAJ } }
+			apply_indian_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = PAK } }
+			apply_punjab_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = BAN } }
+			apply_bengali_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { is_malay_speaking_countries = yes } }
+			apply_malay_name = yes
+		}
+			
+		else_if = { limit = { ROOT = { is_american_countries = yes } }
+			apply_usa_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = ETH } }
+			apply_ethiopian_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = ISR } }
+			apply_israeli_name = yes
+		}
+			
+		else_if = { limit = { ROOT = { tag = SIA } }
+			apply_siam_name = yes
+		}
+				
+		else_if = { limit = { ROOT = { tag = PER } }
+			apply_persian_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = AFG } }
+		    apply_afghanistani_name = yes
+		}
+
+		else_if = { limit = { ROOT = { is_mongol_countries = yes } }
+			apply_mongol_name = yes
+		}
+
+		else_if = { limit = { ROOT = { tag = TIB } }
+		    apply_tibetan_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = BHU } }
+	        apply_bhutan_name = yes
+		}
+			
+	    else_if = { limit = { ROOT = { tag = NEP } }
+			apply_nepal_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = ARM } }
+			apply_armenian_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = GEO } }
+			apply_georgian_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = KUR } }
+			apply_kurdistani_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = AZR } }
+			apply_azerbaijani_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = KAZ } }
+			apply_kazakhstani_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = TAJ } }
+			apply_tajikistani_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = KYR } }
+			apply_kyrgyzstani_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = UZB } }
+			apply_uzbekistani_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { tag = TMS } }
+			apply_turkmenistani_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { is_african_nations = yes } }
+		    apply_african_name = yes
+		}
+		
+		else_if = { limit = { ROOT = { is_roman_empire = yes } }
+		    apply_roman_name = yes
+		}
+		
+		else = { reset_state_name = yes }
+		}

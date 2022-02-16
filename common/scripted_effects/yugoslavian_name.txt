@@ -1,0 +1,1285 @@
+apply_yugoslavian_name = {
+    if = {
+        limit = {
+            state = 45
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = "Vojvodina"
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+        
+        set_province_name = { id = 619 name = "Novi Sad" }        
+    }
+    #removersadd
+	
+	
+	if = {
+        limit = {
+            state = 1391
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = ""
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+        
+     
+
+
+    }
+	
+	
+	if = {
+        limit = {
+            state = 1393
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = ""
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+         set_province_name = { id = 11564 name = "Rijeka" }
+     
+
+
+    }
+	
+	
+	
+	
+	
+	##removersaddend
+	
+	
+	
+	
+	if = {
+        limit = {
+            state = 82
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = "Banat"
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+        
+        set_province_name = { id = 9606 name = "Temišvar" }        
+    }
+    if = {
+        limit = {
+            state = 102
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = "Slovenija"
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+        
+        set_province_name = { id = 9627 name = "Ljubljana" }        
+    }
+    if = {
+        limit = {
+            state = 103
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = "Dalmacija"
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+        
+       
+        set_province_name = { id = 3924 name = "Split" }
+        set_province_name = { id = 11816 name = "Dubrovik" }        
+    }
+    if = {
+        limit = {
+            state = 104
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = "Bosnia"
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+        
+        set_province_name = { id = 11899 name = "Sarajevo" }
+        set_province_name = { id = 6983 name = "Banja Luka" }        
+    }
+    if = {
+        limit = {
+            state = 105
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = "Zeta Banovina"
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+        
+        set_province_name = { id = 9809 name = "Podgorica" }        
+    }
+    if = {
+        limit = {
+            state = 106
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = "Vardarska Banovina"
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+        
+        set_province_name = { id = 3882 name = "Skopje" }        
+    }
+    if = {
+        limit = {
+            state = 107
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = "Srbija"
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+        
+        set_province_name = { id = 11586 name = "Beograd" }        
+    }
+    if = {
+        limit = {
+            state = 108
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = "Moravska"
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+        
+        set_province_name = { id = 9602 name = "Niš" }        
+    }
+    if = {
+        limit = {
+            state = 109
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = "Hrvatska"
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+        set_province_name = { id = 19908 name = "" }
+set_province_name = { id = 19906 name = "" }
+set_province_name = { id = 19907 name = "" }
+        set_province_name = { id = 11581 name = "Zagreb" }        
+    }
+    if = {
+        limit = {
+            state = 163
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = "Zadar"
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+                
+    }
+    if = {
+        limit = {
+            state = 736
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = "Istra"
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+        
+        set_province_name = { id = 6626 name = "Trst" }        
+    }
+    if = {
+        limit = {
+            state = 764
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = "Srpski Banat"
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+        
+        set_province_name = { id = 3614 name = "Pančevo" }        
+    }
+    if = {
+        limit = {
+            state = 802
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = "Kosovo"
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+        
+        set_province_name = { id = 6940 name = "Priština" }        
+    }
+    if = {
+        limit = {
+            state = 803
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = "Pirot"
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+        
+        set_province_name = { id = 11857 name = "Leskovac" }        
+    }
+    if = {
+        limit = {
+            state = 804
+            NOT = {
+                has_state_flag = state_name_yugoslavian
+            }
+        }
+        set_state_name = "Herzegovina"
+		
+        clr_state_flag = state_name_afghanistani
+        clr_state_flag = state_name_african
+        clr_state_flag = state_name_albanian
+        clr_state_flag = state_name_arab
+        clr_state_flag = state_name_arabic
+        clr_state_flag = state_name_armenian
+        clr_state_flag = state_name_azerbaijani
+        clr_state_flag = state_name_belarusian
+        clr_state_flag = state_name_bengali
+        clr_state_flag = state_name_bhutan
+        clr_state_flag = state_name_bulgarian
+        clr_state_flag = state_name_chinese
+        clr_state_flag = state_name_czechoslovak
+        clr_state_flag = state_name_danish
+        clr_state_flag = state_name_dutch
+        clr_state_flag = state_name_english
+        clr_state_flag = state_name_estonian
+        clr_state_flag = state_name_ethiopian
+        clr_state_flag = state_name_finnish
+        clr_state_flag = state_name_french
+        clr_state_flag = state_name_georgian
+        clr_state_flag = state_name_german
+        clr_state_flag = state_name_greek
+        clr_state_flag = state_name_hungarian
+        clr_state_flag = state_name_indian
+        clr_state_flag = state_name_israeli
+        clr_state_flag = state_name_italian
+        clr_state_flag = state_name_japanese
+        clr_state_flag = state_name_kazakhstani
+        clr_state_flag = state_name_korean
+        clr_state_flag = state_name_kurdistani
+        clr_state_flag = state_name_kyrgyzstani
+        clr_state_flag = state_name_latvian
+        clr_state_flag = state_name_lithuanian
+        clr_state_flag = state_name_luxembourgish
+        clr_state_flag = state_name_malay
+        clr_state_flag = state_name_mongol
+        clr_state_flag = state_name_nepal
+        clr_state_flag = state_name_norwegian
+        clr_state_flag = state_name_persian
+        clr_state_flag = state_name_polish
+        clr_state_flag = state_name_portuguese
+        clr_state_flag = state_name_punjab
+        clr_state_flag = state_name_roman
+        clr_state_flag = state_name_romanian
+        clr_state_flag = state_name_russian
+        clr_state_flag = state_name_siam
+        clr_state_flag = state_name_spanish
+        clr_state_flag = state_name_swedish
+        clr_state_flag = state_name_tajikistani
+        clr_state_flag = state_name_tibetan
+        clr_state_flag = state_name_turkish
+        clr_state_flag = state_name_turkmenistani
+        clr_state_flag = state_name_ukrainian
+        clr_state_flag = state_name_usa
+        clr_state_flag = state_name_uzbekistani
+        clr_state_flag = state_name_yugoslavian        
+        set_state_flag = state_name_yugoslavian
+        
+        set_province_name = { id = 9894 name = "Mostar" }        
+    }
+}
