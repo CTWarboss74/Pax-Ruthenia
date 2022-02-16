@@ -1,0 +1,26 @@
+
+state={
+	id=382
+	name="STATE_382"
+	manpower = 602341
+	resources={
+		oil=14 # was: 20
+	}
+	
+	state_category = town
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = USA
+		
+
+	}
+
+	provinces={
+		      6887 7684  7999 9792 10535      
+	}
+}
