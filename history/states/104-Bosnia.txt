@@ -1,0 +1,33 @@
+
+state={
+	id=104
+	name="STATE_104"
+	manpower =598000
+	
+	
+	state_category = rural
+	
+	resources={
+		aluminium=4
+		steel = 8
+		tungsten = 1
+	}
+
+	history={
+		owner = YUG
+		victory_points = {
+			6983 3
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+		}
+		add_core_of = YUG
+		add_core_of = BOS
+	}
+
+	provinces={
+		3985 6614 6619 6957 6983 9586  9922
+	}
+}

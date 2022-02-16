@@ -1,0 +1,23 @@
+
+state={
+	id=156
+	name="STATE_156"
+	manpower = 426315
+	
+	state_category = town
+	history={
+		owner = ITA
+		victory_points = {
+			11837 15 
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+		}
+		add_core_of = ITA
+	}
+
+	provinces={
+		10027 3901 12098 12066 9990
+	}
+}
